@@ -43,6 +43,14 @@ uv pip install -r requirements.txt
 
 Configure o arquivo `.env` com a sua chave de acesso do OpenRouter (`OPENROUTER_API_KEY`).
 
-2. Executar o script principal:
-   ```bash
-   uv run python hello_llm.py
+### 2. Executar o script principal:
+
+```bash
+uv run python hello_llm.py
+3. Salve o arquivo.
+4. No terminal, envie a correção:
+
+```bash
+git add README.md
+git commit -m "docs: ajusta bloco de codigo final do readme"
+git push origin main
