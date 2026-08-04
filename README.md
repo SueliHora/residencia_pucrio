@@ -19,7 +19,7 @@ Nesta primeira aula, o objetivo foi configurar o ambiente de desenvolvimento em 
 * Git e GitHub
 
 ## Estrutura do projeto
-
+```text
 .
 ├── AULA_01/
 │   └── hello_llm.py
@@ -49,8 +49,6 @@ Configure o arquivo `.env` com a sua chave de acesso do OpenRouter (`OPENROUTER_
 uv run python hello_llm.py
 3. Salve o arquivo.
 4. No terminal, envie a correção:
-
-```bash
 git add README.md
 git commit -m "docs: ajusta bloco de codigo final do readme"
 git push origin main
