@@ -27,11 +27,10 @@ Nesta primeira aula, o objetivo foi configurar o ambiente de desenvolvimento em 
 ├── .gitignore
 ├── pyproject.toml
 ├── uv.lock
-├── requirements.txt
 └── README.md
 ```
 
-O arquivo `.env` é utilizado apenas localmente para armazenar a chave da API e **não deve ser versionado**. Da mesma forma, a pasta do ambiente virtual (`.venv/`) gerada pelo `uv` deve ser ignorada pelo Git e não enviada para o repositório.
+Nota de Segurança: **O arquivo `.env` é utilizado apenas localmente para armazenar a chave da API e **não deve ser versionado**. Da mesma forma, a pasta do ambiente virtual (`.venv/`) gerada pelo `uv` deve ser ignorada pelo Git e não enviada para o repositório.
 
 ## Configuração do projeto com `uv`
 
