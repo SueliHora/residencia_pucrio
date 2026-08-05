@@ -33,3 +33,15 @@ Leitura em lote: Processa todos os PDFs da pasta sequencialmente.
 Tratamento de Exceções: Continua o processamento mesmo se um arquivo apresentar problemas críticos.
 
 Mecanismo de fallback inteligente: Alterna entre a ferramenta pesada (Docling) e a leve (PyPDF) automaticamente, garantindo 100% de entrega.
+---
+## 🤖 Tarefa 2: Extração de Metadados com Structured Outputs
+
+Processamento dos arquivos `.md` gerados na Tarefa 1 para extração de dados estritos via API.
+
+- **Objetivo:** Extrair o título, os autores (como lista de strings) e o ano de publicação em formato JSON estrito.
+- **Implementação (`extrator.py`):** Utilização da API do OpenRouter compatível com OpenAI, aplicando `response_format` com `json_schema` e `strict=True`.
+- **Ajuste Técnico (Tokens):** Configuração explícita de `max_tokens=1500` para otimizar a requisição e evitar o erro de limite de créditos na API.
+
+### Como Executar o Extrator:
+```bash
+uv run python extrator.py
