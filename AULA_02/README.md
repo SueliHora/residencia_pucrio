@@ -2,10 +2,10 @@
 
 Este diretório contém a solução para a Aula 02, focada em converter artigos acadêmicos em PDF para o formato Markdown (`.md`) de forma automatizada usando Python.
 
-## 🎯 O Desafio
+## O Desafio
 O objetivo era extrair o texto de três artigos (*Bioética e IA*, *Escrita Acadêmica com IA* e *Algoritmo do Twitter*). Durante o processo, lidamos com desafios reais de infraestrutura e limitações de hardware que afetam bibliotecas pesadas de IA, problemas que fizeram os scripts padrão falharem.
 
-## 🛠️ Problemas Resolvidos (Troubleshooting)
+## Problemas Resolvidos (Troubleshooting)
 
 1. **Erro de Compilação do PyTorch (`InductorError / cl is not found`):**
    - **Causa:** O Docling utiliza modelos do PyTorch que tentam compilar código C++ no Windows para otimizar a execução, mas falham se o compilador nativo (`cl.exe`) não estiver instalado.
@@ -17,7 +17,7 @@ O objetivo era extrair o texto de três artigos (*Bioética e IA*, *Escrita Acad
      - Desativamos o OCR e a estruturação de tabelas pesada.
      - Implementamos uma arquitetura de **Fallback (Plano B)** usando `try...except`. Se o processamento via IA falhar por limite de hardware, o script aciona instantaneamente a biblioteca mais leve `pypdf` para garantir a extração do texto sem quebrar o programa.
 
-## 🚀 Como Executar
+## Como Executar
 
 O projeto utiliza o gerenciador de pacotes `uv` para máxima eficiência.
 
@@ -34,7 +34,7 @@ Tratamento de Exceções: Continua o processamento mesmo se um arquivo apresenta
 
 Mecanismo de fallback inteligente: Alterna entre a ferramenta pesada (Docling) e a leve (PyPDF) automaticamente, garantindo 100% de entrega.
 ---
-## 🤖 Tarefa 2: Extração de Metadados com Structured Outputs
+## Tarefa 2: Extração de Metadados com Structured Outputs
 
 Processamento dos arquivos `.md` gerados na Tarefa 1 para extração de dados estritos via API.
 
